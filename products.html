@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowers</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="flower.css">
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700&amp;subset=cyrillic-ext"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <div id="navbar__logo">
+                <div class="logo-holder logo-7" id="logo">
+                    <img class="flower" src="img/flower-logo.png">
+                    <div class="left">
+                        <h3>Flora</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span> <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/index.html" class="navbar__links">About Us</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/products.html" class="navbar__links">Products</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#contacts" class="navbar__links" onclick="myFunction()">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="card-wrapper">
+
+        <!-- Ролл -->
+        <div class="card" data-id="01">
+            <img class="gul-img" src="img/honey-b.png" alt="">
+            <div class="card-text">
+                <h3 class="card-title">The honey B</h3>
+                <p class="text-muted">Mini arragement</p>
+
+                <div class="wrapper">
+                    <div class="number">
+                        <span class="minus" data-action="minus">-</span>
+                        <div class="input" data-counter>1</div>
+                        <span class="plus" data-action="plus">+</span>
+                    </div>
+                    <div class="price">
+                        <div class="price__currency">100 ₽</div>
+                    </div>
+                </div>
+                <button data-cart type="button" class="btn btn-block btn-outline-warning">
+                    + в корзину
+                </button>
+            </div>
+        </div>
+
+        <div class="card text-center" data-id="02">
+            <img class="gul-img" src="img/ember.png" alt="">
+            <div class="card-text">
+                <h3 class="card-title">The Ember</h3>
+                <p small data-items-in-box class="text-muted">Small arragement</p>
+
+                <div class="wrapper">
+                    <div class="number">
+                        <span class="minus" data-action="minus">-</span>
+                        <div class="input" data-counter>1</div>
+                        <span class="plus" data-action="plus">+</span>
+                    </div>
+                    <div class="price">
+                        <div class="price__currency">310 ₽</div>
+                    </div>
+                </div>
+                <button data-cart type="button" class="btn btn-block btn-outline-warning">
+                    + в корзину
+                </button>
+            </div>
+        </div>
+
+
+        <div class="card text-center" data-id="03">
+            <img class="gul-img" src="img/ollie.png" alt="">
+            <div class="card-text">
+                <h3 class="card-title">The Ollie</h3>
+                <p small data-items-in-box class="text-muted">Medium arragement</p>
+
+                <div class="wrapper">
+                    <div class="number">
+                        <span class="minus" data-action="minus">-</span>
+                        <div class="input" data-counter>1</div>
+                        <span class="plus" data-action="plus">+</span>
+                    </div>
+                    <div class="price">
+                        <div class="price__currency">300 ₽</div>
+                    </div>
+                </div>
+                <button data-cart type="button" class="btn btn-block btn-outline-warning">
+                    + в корзину
+                </button>
+            </div>
+        </div>
+
+
+        <div class="card" data-id="04">
+            <img class="gul-img" src="img/henna.png" alt="">
+            <div class="card-text">
+                <h3 class="card-title">The Henna</h3>
+                <p small data-items-in-box class="text-muted">Large arragement</p>
+
+                <div class="wrapper">
+                    <div class="number">
+                        <span class="minus" data-action="minus">-</span>
+                        <div class="input" data-counter>1</div>
+                        <span class="plus" data-action="plus">+</span>
+                    </div>
+                    <div class="price">
+                        <div class="price__currency">300 ₽</div>
+                    </div>
+                </div>
+                <button data-cart type="button" class="btn btn-block btn-outline-warning">
+                    + в корзину
+                </button>
+            </div>
+        </div>
+
+
+        <div class="card" data-id="05">
+            <img class="gul-img" src="img/henna.png" alt="">
+            <div class="card-text">
+                <h3 class="card-title">The Henna</h3>
+                <p small data-items-in-box class="text-muted">Large arragement</p>
+
+                <div class="wrapper">
+                    <div class="number">
+                        <span class="minus" data-action="minus">-</span>
+                        <div class="input" data-counter>1</div>
+                        <span class="plus" data-action="plus">+</span>
+                    </div>
+                    <div class="price">
+                        <div class="price__currency">250 ₽</div>
+                    </div>
+                </div>
+                <button data-cart type="button" class="btn btn-block btn-outline-warning">
+                    + в корзину
+                </button>
+            </div>
+        </div>
+
+
+        <div class="card" data-id="06">
+            <img class="gul-img" src="img/henna.png" alt="">
+            <div class="card-text">
+                <h3 class="card-title">The Henna</h3>
+                <p small data-items-in-box class="text-muted">Large arragement</p>
+
+                <div class="wrapper">
+                    <div class="number">
+                        <span class="minus" data-action="minus">-</span>
+                        <div class="input" data-counter>1</div>
+                        <span class="plus" data-action="plus">+</span>
+                    </div>
+                    <div class="price">
+                        <div class="price__currency">200 ₽</div>
+                    </div>
+                </div>
+                <button data-cart type="button" class="btn btn-block btn-outline-warning">
+                    + в корзину
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- Корзина -->
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Ваш заказ</h4>
+
+                <div data-cart-empty class="alert alert-secondary" role="alert">
+                   <p>Корзина пуста</p> 
+                </div>
+
+                <!-- cart-wrapper -->
+                <div class="cart-wrapper">
+
+                </div>
+                <!-- // cart-wrapper -->
+
+                <!-- Стоимость заказа -->
+                <div class="cart-total">
+                    <p data-cart-delivery class="none">
+                        <span class="h5">Доставка:</span>
+                        <span class="delivery-cost">250 ₽</span><br>
+                        <span class="small">Бесплатно при заказе от 600 ₽</span>
+                    </p>
+                    <p><span class="h5">Итого:</span>
+                        <span class="total-price">0</span>
+                        <span class="rouble">₽</span>
+                    </p>
+                </div>
+                <!-- // Стоимость заказа -->
+
+        </div>
+
+        <!-- Оформить заказ -->
+        <div id="order-form" class="card-body border-top">
+            <h4 class="card-title">Оформить заказ</h4>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Ваш номер телефона">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Заказать</button>
+                </form>
+        </div>
+        <!-- // Оформить заказ -->
+
+    </div>
+
+    <!-- // Корзина -->
+    <footer>
+        <div class="foot-text">
+            <h2>Let`s Get in Touch !</h2>
+            <p style="text-indent: 25px">Have any questions about our products? Looking to partner with us or
+                inquire about a custom floral arrangement? Click the link below and shoot us an email!
+            <p class="btn orange circular" href="#">FLORA@GMAIL.COM</p>
+            </p>
+
+        </div>
+        </div>
+        <div class="social">
+            <ul>
+                <li><a href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/instagram.svg" alt="instagram"></a></li>
+                <li><a href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/twitter.svg" alt="twitter"></a></li>
+                <li><a href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/facebook.svg" alt="facebook"></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+    <script src="./js copy/calcCartPrice.js"></script>
+    <script src="./js copy/toggleCartStatus.js"></script>
+    <script src="./js copy/counter-02.js"></script>
+    <script src="./js copy/cart.js"></script>
+
+    <script>
+        function myFunction() {
+            alert("tel.number:999-9999-9999");
+        }
+    </script>
+
+</body>
+
+
+
+</html>
